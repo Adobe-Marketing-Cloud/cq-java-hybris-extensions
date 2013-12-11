@@ -18,15 +18,14 @@
 package com.mycompany.myproject.impl;
 
 import javax.jcr.Node;
-
-import com.adobe.cq.commerce.hybris.importer.DefaultImportHandler;
-import com.adobe.cq.commerce.hybris.importer.ImportHandler;
-import com.adobe.cq.commerce.hybris.importer.ImporterContext;
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Properties;
 import org.apache.felix.scr.annotations.Property;
 import org.apache.felix.scr.annotations.Service;
 import org.apache.sling.api.resource.ValueMap;
+import com.adobe.cq.commerce.hybris.importer.DefaultImportHandler;
+import com.adobe.cq.commerce.hybris.importer.ImportHandler;
+import com.adobe.cq.commerce.hybris.importer.ImporterContext;
 
 /**
  * Customized import handler for Hybris product catalogs.
