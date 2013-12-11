@@ -60,6 +60,11 @@
             <groupId>org.apache.sling</groupId>
             <artifactId>org.apache.sling.jcr.api</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.adobe.cq.commerce</groupId>
+            <artifactId>cq-commerce-hybris-impl</artifactId>
+        </dependency>
+
     </dependencies>
 
     <!-- ====================================================================== -->
