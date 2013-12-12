@@ -90,17 +90,51 @@
                 <scope>provided</scope>
             </dependency>
             <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.8.1</version>
+                <scope>test</scope>
+            </dependency>
+
+            <!-- Commerce specific dependencies -->
+
+            <dependency>
+                <groupId>com.adobe.cq.commerce</groupId>
+                <artifactId>cq-commerce-core</artifactId>
+                <version>5.7.48</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.adobe.cq.commerce</groupId>
+                <artifactId>cq-commerce-pim</artifactId>
+                <version>5.7.14</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
                 <groupId>com.adobe.cq.commerce</groupId>
                 <artifactId>cq-commerce-hybris-impl</artifactId>
                 <version>5.6.200</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <version>4.8.1</version>
-                <scope>test</scope>
+                <groupId>com.day.cq.wcm</groupId>
+                <artifactId>cq-wcm-api</artifactId>
+                <version>5.6.6</version>
+                <scope>provided</scope>
             </dependency>
+            <dependency>
+                <groupId>com.day.cq</groupId>
+                <artifactId>cq-commons</artifactId>
+                <version>5.6.4</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.adobe.granite</groupId>
+                <artifactId>com.adobe.granite.workflow.api</artifactId>
+                <version>1.0.2</version>
+                <scope>provided</scope>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

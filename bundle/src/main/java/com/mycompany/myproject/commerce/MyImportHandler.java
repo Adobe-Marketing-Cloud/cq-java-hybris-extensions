@@ -15,9 +15,13 @@
  * is strictly forbidden unless prior written permission is obtained
  * from Adobe Systems Incorporated.
  **************************************************************************/
-package com.mycompany.myproject.impl;
+package com.mycompany.myproject.commerce;
+
+import java.util.List;
 
 import javax.jcr.Node;
+import javax.jcr.RepositoryException;
+
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Properties;
 import org.apache.felix.scr.annotations.Property;
@@ -26,6 +30,8 @@ import org.apache.sling.api.resource.ValueMap;
 import com.adobe.cq.commerce.hybris.importer.DefaultImportHandler;
 import com.adobe.cq.commerce.hybris.importer.ImportHandler;
 import com.adobe.cq.commerce.hybris.importer.ImporterContext;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Customized import handler for Hybris product catalogs.
@@ -35,11 +41,26 @@ import com.adobe.cq.commerce.hybris.importer.ImporterContext;
 @Properties({
         @Property(name="service.ranking", intValue = 5000, propertyPrivate = true)
 })
-public class MyImportHandlerComponent extends DefaultImportHandler implements ImportHandler {
+public class MyImportHandler extends DefaultImportHandler implements ImportHandler {
+
+    private static final Logger log = LoggerFactory.getLogger(MyImportHandler.class);
 
     // overriding an existing method to extend its behaviour
+    @Override
     public void updateAsset(Node imageNode, ImporterContext ctx, ValueMap values) throws Exception {
         // put your code here
+    }
+
+    @Override
+    public String createProduct(ImporterContext ctx, ValueMap values, List<String> categories) throws Exception {
+        log.info("MyImportHandler is creating a product.");
+        return super.createProduct(ctx, values, categories);
+    }
+
+    @Override
+    public void updateProduct(Node productNode, ImporterContext ctx, ValueMap values, List<String> categories) throws RepositoryException {
+        log.info("MyImportHandler is updating a product.");
+        super.updateProduct(productNode, ctx, values, categories);
     }
 
 }

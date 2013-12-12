@@ -60,16 +60,32 @@
             <groupId>org.apache.sling</groupId>
             <artifactId>org.apache.sling.jcr.api</artifactId>
         </dependency>
+
+        <!-- Commerce specific dependencies -->
+
+        <dependency>
+            <groupId>com.adobe.cq.commerce</groupId>
+            <artifactId>cq-commerce-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.cq.commerce</groupId>
+            <artifactId>cq-commerce-pim</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.adobe.cq.commerce</groupId>
             <artifactId>cq-commerce-hybris-impl</artifactId>
         </dependency>
-
         <dependency>
             <groupId>com.day.cq.wcm</groupId>
             <artifactId>cq-wcm-api</artifactId>
-            <version>5.6.6</version>
-            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.day.cq</groupId>
+            <artifactId>cq-commons</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.granite</groupId>
+            <artifactId>com.adobe.granite.workflow.api</artifactId>
         </dependency>
 
     </dependencies>
