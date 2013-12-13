@@ -87,6 +87,10 @@
             <groupId>com.adobe.granite</groupId>
             <artifactId>com.adobe.granite.workflow.api</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.adobe.granite</groupId>
+            <artifactId>com.adobe.granite.security.user</artifactId>
+        </dependency>
 
     </dependencies>
 

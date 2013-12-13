@@ -18,7 +18,7 @@ import org.apache.felix.scr.annotations.Service;
 @Component(metatype = true, label = "My Import Handler")
 @Service(HybrisImporter.class)
 @Properties({
-        @Property(name = "commerceProvider", value = "trainingCommerce", propertyPrivate = true)
+        @Property(name = "commerceProvider", value = "my-hybris", propertyPrivate = true)
 })
 public class MyImporter extends DefaultHybrisImporter implements HybrisImporter, ProductImporter {
 
