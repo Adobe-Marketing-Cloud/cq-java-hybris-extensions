@@ -29,13 +29,12 @@ public class MyImporter extends DefaultHybrisImporter implements HybrisImporter,
 
     @Override
     public void importCatalog(Resource base, String baseStore, String catalog, String language, PrintWriter writer) {
-        log.info("My importer is at work: importCatalog");
-        super.importCatalog(base, baseStore, catalog, language, writer);   
+        importCatalog(base, baseStore, catalog, language, writer, false);
     }
 
     @Override
     public void importCatalog(Resource base, String baseStore, String catalog, String language, PrintWriter writer, boolean incremental) {
-        log.info("My importer is at work: importCatalog 2");
+        log.info("My importer is at work: importCatalog");
         super.importCatalog(base, baseStore, catalog, language, writer, incremental);   
     }
 
