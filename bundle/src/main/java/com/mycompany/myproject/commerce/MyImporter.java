@@ -15,6 +15,9 @@ import org.apache.felix.scr.annotations.Properties;
 import org.apache.felix.scr.annotations.Property;
 import org.apache.felix.scr.annotations.Service;
 
+/**
+ * Customized Hybris importer.
+ */
 @Component(metatype = true, label = "My Import Handler")
 @Service(HybrisImporter.class)
 @Properties({

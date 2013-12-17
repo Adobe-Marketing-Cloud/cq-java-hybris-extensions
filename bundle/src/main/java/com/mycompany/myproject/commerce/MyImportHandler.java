@@ -39,16 +39,16 @@ import org.slf4j.LoggerFactory;
 @Component(metatype = true, label = "Customized Commerce Hybris Import Handler")
 @Service
 @Properties({
-        @Property(name="service.ranking", intValue = 5000, propertyPrivate = true)
+        @Property(name="service.ranking", intValue = 1000, propertyPrivate = true)
 })
 public class MyImportHandler extends DefaultImportHandler implements ImportHandler {
 
     private static final Logger log = LoggerFactory.getLogger(MyImportHandler.class);
 
-    // overriding an existing method to extend its behaviour
     @Override
     public void updateAsset(Node imageNode, ImporterContext ctx, ValueMap values) throws Exception {
-        // put your code here
+        log.info("MyImportHandler is updating an asset.");
+        super.updateAsset(imageNode, ctx, values);
     }
 
     @Override
