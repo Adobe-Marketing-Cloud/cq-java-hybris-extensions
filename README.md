@@ -2,13 +2,13 @@ Extending the CQ Hybris connector
 ========
 
 This project shows how to extend/customize the Hybris connector to achieve the following:
-* parse some custom Hybris data when importing products from Hybris: `MyResponseParser#parseProductData`
-* add/update some specific product attributes in CQ when importing products from Hybris: `MyImportHandler#updateProduct`
-* modify the way assets are stored in CQ when importing products from Hybris: `MyImportHandler#updateAsset`
-* customize the way catalogs are imported/updated from Hybris: `MyImporter#importCatalog`
-* customize the way groups are imported from Hybris: `MyImporter#importGroups`
-* customize the catalog/product rollout process: `MyCommerceService#catalogRolloutHook` and `MyCommerceService#productRolloutHook`
-* change the price of a product: `MyCommerceSession#getProductPrice`
+* Parse some custom Hybris data when importing products from Hybris: `MyResponseParser#parseProductData`
+* Add/update some specific product attributes in CQ when importing products from Hybris: `MyImportHandler#updateProduct`
+* Modify the way assets are stored in CQ when importing products from Hybris: `MyImportHandler#updateAsset`
+* Customize the way catalogs are imported/updated from Hybris: `MyImporter#importCatalog`
+* Customize the way groups are imported from Hybris: `MyImporter#importGroups`
+* Customize the catalog/product rollout process: `MyCommerceService#catalogRolloutHook` and `MyCommerceService#productRolloutHook`
+* Change the price of a product: `MyCommerceSession#getProductPrice`
 
 Some other extension points:
 * `HybrisFactory#getProduct` is responsible for creating Product instances.
