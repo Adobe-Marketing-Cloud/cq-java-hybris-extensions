@@ -3,6 +3,7 @@ Extending the CQ Hybris connector
 
 This project shows how to extend/customize the Hybris connector to achieve the following:
 * Parse some custom Hybris data when importing products from Hybris: `MyResponseParser#parseProductData`
+* Import product references from Hybris: `MyResponseParser#parseUnknownProductAttribute`
 * Add/update some specific product attributes in CQ when importing products from Hybris: `MyImportHandler#updateProduct`
 * Modify the way assets are stored in CQ when importing products from Hybris: `MyImportHandler#updateAsset`
 * Customize the way catalogs are imported/updated from Hybris: `MyImporter#importCatalog`
