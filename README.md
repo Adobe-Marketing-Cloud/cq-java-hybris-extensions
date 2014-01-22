@@ -19,3 +19,5 @@ Some other extension points:
 * `ProfileSynchronizer#syncProfile` is responsible for syncing the user’s CQ profile to the respective Hybris account.
 * `HybrisConnection` is responsible for actually sending HTTP(S) requests to the Hybris server.
 * `HybrisAuthenticationHandler`(s) are responsible for authenticating HTTP(S) requests.
+
+The project can be built and deployed with Maven.
