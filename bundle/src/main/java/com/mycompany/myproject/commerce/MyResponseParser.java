@@ -35,11 +35,9 @@ import org.apache.felix.scr.annotations.Service;
 /**
  * Customized Hybris response parser.
  */
-/*
 @Component(metatype = true, label = "My Hybris Response Parser")
 @Service
 @Properties({@Property(name = "service.ranking", intValue = 1000)})
-*/
 public class MyResponseParser extends DefaultResponseParser {
 
     @Override
